@@ -60,13 +60,13 @@
                                    green: 0
                                    blue: 0
                                    alpha: .5].CGColor;
-    cropLayer = [CALayer new];
-    cropLayer.backgroundColor = [UIColor clearColor].CGColor;
-    cropLayer.borderWidth = 2;
-    cropLayer.borderColor = [UIColor colorWithRed: 0
-                                     green: 0
-                                     blue: 1
-                                     alpha: .5].CGColor;
+//    cropLayer = [CALayer new];
+//    cropLayer.backgroundColor = [UIColor clearColor].CGColor;
+//    cropLayer.borderWidth = 2;
+//    cropLayer.borderColor = [UIColor colorWithRed: 0
+//                                     green: 0
+//                                     blue: 1
+//                                     alpha: .5].CGColor;
     [overlay addSublayer: cropLayer];
 #endif
 
