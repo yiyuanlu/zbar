@@ -8,3 +8,5 @@
 # import <CoreMedia/CoreMedia.h>
 # import <CoreVideo/CoreVideo.h>
 #endif
+
+#define NSLog(format, ...) {}
