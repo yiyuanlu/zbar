@@ -126,9 +126,22 @@
 
     [view addSubview: toolbar];
 
-    NSString *path = [[NSBundle mainBundle]
-                         pathForResource: @"zbar-help"
-                         ofType: @"html"];
+    NSString *languages = [[NSLocale preferredLanguages] objectAtIndex:0];
+    NSString *path;
+    
+    if([languages isEqualToString:@"zh-Hans"])
+    {
+        path = [[NSBundle mainBundle]
+            pathForResource: @"zbar-help-cn"
+            ofType: @"html"];
+    }
+    else 
+    {
+        path = [[NSBundle mainBundle]
+            pathForResource: @"zbar-help-en"
+            ofType: @"html"];        
+    }
+
 
     NSURLRequest *req = nil;
     if(path) {

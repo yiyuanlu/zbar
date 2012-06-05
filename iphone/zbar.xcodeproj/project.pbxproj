@@ -40,6 +40,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2C59FEA4157E0D0C00E054A2 /* zbar-help-cn.html in Copy Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA2157E0CE400E054A2 /* zbar-help-cn.html */; };
+		2C59FEA5157E0D0C00E054A2 /* zbar-help-en.html in Copy Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA3157E0CE400E054A2 /* zbar-help-en.html */; };
 		DC26004C118631C200FA987B /* ZBarCaptureReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26004B118631C200FA987B /* ZBarCaptureReader.m */; };
 		DC290E281351496400A9B857 /* codabar.c in Sources */ = {isa = PBXBuildFile; fileRef = DC290E261351496400A9B857 /* codabar.c */; };
 		DC299A9D1208B5E8006A023C /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libzbar.a */; };
@@ -48,7 +50,6 @@
 		DC299AA21208B61C006A023C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5045411203396B009FF359 /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DC299AA31208B61C006A023C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1A49C111FF537000BCDA30 /* QuartzCore.framework */; };
 		DC299AA41208B61C006A023C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5045431203396B009FF359 /* libiconv.dylib */; };
-		DC299AA51208B63C006A023C /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A211FF33B300BCDA30 /* zbar-help.html */; };
 		DC299AA61208B63C006A023C /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A311FF33B300BCDA30 /* zbar-helpicons.png */; };
 		DC299AA71208B63C006A023C /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A411FF33B300BCDA30 /* zbar-samples.png */; };
 		DC299B061208FC11006A023C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC299B051208FC11006A023C /* CoreGraphics.framework */; };
@@ -67,7 +68,6 @@
 		DC3CEE9A1215C97F00D7A786 /* Symbol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DC50463B12034A4C009FF359 /* Symbol.h */; };
 		DC3CEE9B1215C97F00D7A786 /* Video.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DC50463C12034A4C009FF359 /* Video.h */; };
 		DC3CEE9C1215C97F00D7A786 /* Window.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DC50463D12034A4C009FF359 /* Window.h */; };
-		DC3CEEA01215C9C000D7A786 /* zbar-help.html in Copy Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A211FF33B300BCDA30 /* zbar-help.html */; };
 		DC3CEEA11215C9C000D7A786 /* zbar-helpicons.png in Copy Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A311FF33B300BCDA30 /* zbar-helpicons.png */; };
 		DC3CEEA21215C9C000D7A786 /* zbar-samples.png in Copy Resources */ = {isa = PBXBuildFile; fileRef = DC1A49A411FF33B300BCDA30 /* zbar-samples.png */; };
 		DC3CEFB51216349700D7A786 /* ZBarCaptureReader.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA51216347100D7A786 /* ZBarCaptureReader.h */; };
@@ -196,8 +196,9 @@
 			dstPath = Resources;
 			dstSubfolderSpec = 1;
 			files = (
+				2C59FEA4157E0D0C00E054A2 /* zbar-help-cn.html in Copy Resources */,
+				2C59FEA5157E0D0C00E054A2 /* zbar-help-en.html in Copy Resources */,
 				DC3CF2A312197A8C00D7A786 /* zbar-back.png in Copy Resources */,
-				DC3CEEA01215C9C000D7A786 /* zbar-help.html in Copy Resources */,
 				DC3CEEA11215C9C000D7A786 /* zbar-helpicons.png in Copy Resources */,
 				DC3CEEA21215C9C000D7A786 /* zbar-samples.png in Copy Resources */,
 			);
@@ -237,9 +238,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C59FEA2157E0CE400E054A2 /* zbar-help-cn.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "zbar-help-cn.html"; path = "res/zbar-help-cn.html"; sourceTree = "<group>"; };
+		2C59FEA3157E0CE400E054A2 /* zbar-help-en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "zbar-help-en.html"; path = "res/zbar-help-en.html"; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libzbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC1A49A211FF33B300BCDA30 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "zbar-help.html"; path = "res/zbar-help.html"; sourceTree = "<group>"; };
 		DC1A49A311FF33B300BCDA30 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zbar-helpicons.png"; path = "res/zbar-helpicons.png"; sourceTree = "<group>"; };
 		DC1A49A411FF33B300BCDA30 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zbar-samples.png"; path = "res/zbar-samples.png"; sourceTree = "<group>"; };
 		DC1A49C111FF537000BCDA30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -412,8 +414,9 @@
 		DC1A49A111FF338B00BCDA30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C59FEA2157E0CE400E054A2 /* zbar-help-cn.html */,
+				2C59FEA3157E0CE400E054A2 /* zbar-help-en.html */,
 				DC3CF2A212197A7200D7A786 /* zbar-back.png */,
-				DC1A49A211FF33B300BCDA30 /* zbar-help.html */,
 				DC1A49A311FF33B300BCDA30 /* zbar-helpicons.png */,
 				DC1A49A411FF33B300BCDA30 /* zbar-samples.png */,
 			);
@@ -649,7 +652,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC299AA51208B63C006A023C /* zbar-help.html in Resources */,
 				DC299AA61208B63C006A023C /* zbar-helpicons.png in Resources */,
 				DC299AA71208B63C006A023C /* zbar-samples.png in Resources */,
 				DC48C5341219FDDE0047193B /* zbar-back.png in Resources */,
