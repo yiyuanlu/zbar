@@ -160,9 +160,13 @@ int qr_code_data_list_extract_text(const qr_code_data_list *_qrlist,
       else sa_text[sa_ntext++]=(char)(fnc1_2ai-100);
     }
     eci=-1;
-    enc_list[0]=sjis_cd;
-    enc_list[1]=latin1_cd;
-    enc_list[2]=utf8_cd;
+  //enc_list[0]=sjis_cd;
+  //enc_list[1]=latin1_cd;
+  //enc_list[2]=utf8_cd;
+    enc_list[0]=utf8_cd;
+    enc_list[1]=sjis_cd;
+    enc_list[2]=latin1_cd;
+      
     eci_cd=(iconv_t)-1;
     err=0;
     for(j = 0; j < sa_size && !err; j++, sym = &(*sym)->next) {
