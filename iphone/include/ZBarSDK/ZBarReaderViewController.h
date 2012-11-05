@@ -59,6 +59,8 @@
     UIView *controls, *shutter;
     BOOL didHideStatusBar, rotating;
     ZBarCameraSimulator *cameraSim;
+    
+    UIBarButtonItem *btnFlash;
 }
 
 // access to configure image scanner

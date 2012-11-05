@@ -42,6 +42,8 @@
 /* Begin PBXBuildFile section */
 		2C59FEA4157E0D0C00E054A2 /* zbar-help-cn.html in Copy Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA2157E0CE400E054A2 /* zbar-help-cn.html */; };
 		2C59FEA5157E0D0C00E054A2 /* zbar-help-en.html in Copy Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA3157E0CE400E054A2 /* zbar-help-en.html */; };
+		2C9123E01585D950007A243D /* zbar-help-cn.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA2157E0CE400E054A2 /* zbar-help-cn.html */; };
+		2C9123E11585D950007A243D /* zbar-help-en.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C59FEA3157E0CE400E054A2 /* zbar-help-en.html */; };
 		DC26004C118631C200FA987B /* ZBarCaptureReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26004B118631C200FA987B /* ZBarCaptureReader.m */; };
 		DC290E281351496400A9B857 /* codabar.c in Sources */ = {isa = PBXBuildFile; fileRef = DC290E261351496400A9B857 /* codabar.c */; };
 		DC299A9D1208B5E8006A023C /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libzbar.a */; };
@@ -88,7 +90,6 @@
 		DC3EBB2D119DDB2100107EE9 /* ZBarReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3EBB2C119DDB2100107EE9 /* ZBarReaderViewController.m */; };
 		DC48C5341219FDDE0047193B /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3CF2A212197A7200D7A786 /* zbar-back.png */; };
 		DC48C5411219FE550047193B /* readertest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC48C5401219FE550047193B /* readertest.m */; };
-		DC48C57D121A1F410047193B /* ZBarSDK in Copy SDK */ = {isa = PBXBuildFile; fileRef = DC48C55F121A1E7F0047193B /* ZBarSDK */; };
 		DC48C5A8121B1F910047193B /* Documentation.html in Copy SDK */ = {isa = PBXBuildFile; fileRef = DC48C5A7121B1F840047193B /* Documentation.html */; };
 		DC4920EE10A70475000E4D43 /* ZBarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4920EC10A70475000E4D43 /* ZBarImage.m */; };
 		DC4920EF10A70475000E4D43 /* ZBarImageScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4920ED10A70475000E4D43 /* ZBarImageScanner.m */; };
@@ -225,7 +226,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 1;
 			files = (
-				DC48C57D121A1F410047193B /* ZBarSDK in Copy SDK */,
 				DC3CF2021218353B00D7A786 /* README in Copy SDK */,
 				DC3CF2031218353B00D7A786 /* ChangeLog in Copy SDK */,
 				DC3CF2041218353B00D7A786 /* COPYING in Copy SDK */,
@@ -652,6 +652,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9123E01585D950007A243D /* zbar-help-cn.html in Resources */,
+				2C9123E11585D950007A243D /* zbar-help-en.html in Resources */,
 				DC299AA61208B63C006A023C /* zbar-helpicons.png in Resources */,
 				DC299AA71208B63C006A023C /* zbar-samples.png in Resources */,
 				DC48C5341219FDDE0047193B /* zbar-back.png in Resources */,

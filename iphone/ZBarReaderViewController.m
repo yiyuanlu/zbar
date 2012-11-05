@@ -30,6 +30,11 @@
 #define MODULE ZBarReaderViewController
 #import "debug.h"
 
+
+#define FLASH_AUTO [[[NSLocale preferredLanguages] objectAtIndex:0] isEqualToString:@"zh-Hans"]?@"闪光自动":@"Flash Auto"
+#define FLASH_OFF [[[NSLocale preferredLanguages] objectAtIndex:0] isEqualToString:@"zh-Hans"]?@"闪光关":@"Flash Off"
+#define FLASH_ON [[[NSLocale preferredLanguages] objectAtIndex:0] isEqualToString:@"zh-Hans"]?@"闪光开":@"Flash On"
+
 static inline AVCaptureDevicePosition
 AVPositionForUICamera (UIImagePickerControllerCameraDevice camera)
 {
@@ -155,7 +160,7 @@ AVSessionPresetForUIVideoQuality (UIImagePickerControllerQualityType quality)
     scanCrop = CGRectMake(0, 0, 1, 1);
     cameraViewTransform = CGAffineTransformIdentity;
 
-    cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
+    cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
     videoQuality = UIImagePickerControllerQualityType640x480;
     AVCaptureDevice *device = nil;
 #if !TARGET_IPHONE_SIMULATOR
@@ -261,6 +266,9 @@ AVSessionPresetForUIVideoQuality (UIImagePickerControllerQualityType quality)
 
     UIToolbar *toolbar =
         [UIToolbar new];
+    
+    btnFlash = [[UIBarButtonItem alloc] initWithTitle:FLASH_OFF style:UIBarButtonItemStyleBordered target:self action:@selector(actFlash)];
+    
     r.origin.y = 0;
     toolbar.frame = r;
     toolbar.barStyle = UIBarStyleBlackOpaque;
@@ -280,12 +288,28 @@ AVSessionPresetForUIVideoQuality (UIImagePickerControllerQualityType quality)
               target: nil
               action: nil]
              autorelease],
+         btnFlash,
             nil];
     [sw release];
     [controls addSubview: toolbar];
     [toolbar release];
+    [btnFlash release];
 
     [view addSubview: controls];
+}
+-(void)actFlash
+{    
+    if(cameraFlashMode == UIImagePickerControllerCameraFlashModeOff)
+    {
+        [self setCameraFlashMode:UIImagePickerControllerCameraFlashModeOn];
+        btnFlash.title = FLASH_ON;
+    }
+    else
+    {
+        [self setCameraFlashMode:UIImagePickerControllerCameraFlashModeOff];
+        btnFlash.title = FLASH_OFF;    
+    }
+
 }
 
 - (void) initVideoQuality
